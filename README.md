@@ -1,4 +1,4 @@
-# 🍽️ Raízes do Nordeste API 
+# 🍽️ Raízes do Nordeste API
 
 [![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -53,13 +53,13 @@ Após rodar o projeto localmente, acesse `http://localhost:8000/docs` para explo
 
 O sistema utiliza autenticação stateless com **JWT** (expiração de 60 minutos) e controle de acesso baseado em perfis **(RBAC)**:
 
-| Perfil        | Descrição                                 |
-| ------------- | ----------------------------------------- |
-| `ADMIN`       | Acesso total ao sistema                   |
-| `GERENTE`     | Gestão de unidades, produtos e relatórios |
-| `COZINHA`     | Visualização e atualização de pedidos     |
-| `ATENDENTE`   | Criação de pedidos e atendimento          |
-| `CLIENTE`     | Pedidos, pagamentos e fidelidade          |
+| Perfil      | Descrição                                 |
+| ----------- | ----------------------------------------- |
+| `ADMIN`     | Acesso total ao sistema                   |
+| `GERENTE`   | Gestão de unidades, produtos e relatórios |
+| `COZINHA`   | Visualização e atualização de pedidos     |
+| `ATENDENTE` | Criação de pedidos e atendimento          |
+| `CLIENTE`   | Pedidos, pagamentos e fidelidade          |
 
 > ⚠️ O consentimento LGPD é obrigatório no cadastro de usuários.
 
@@ -188,40 +188,3 @@ uvicorn app.main:app --reload
 ```
 
 ### 6. Acesse a documentação interativa
-
-```
-http://localhost:8000/docs
-```
-
----
-
-## 📁 Estrutura do projeto
-
-```
-raizes-do-nordeste/
-├── app/
-│   ├── main.py
-│   ├── database.py
-│   ├── models/
-│   ├── schemas/
-│   ├── routers/
-│   └── services/
-├── postman_collection.json
-├── .env.example
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 👤 Autor
-
-**Kelver Mendes**  
-Diretor Comercial com experiência em desenvolvimento back-end Python
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kelver--mendes-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/kelver-mendes-51250930a)
-[![Gmail](https://img.shields.io/badge/Gmail-kelvermendes1991@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:kelvermendes1991@gmail.com)
-
----
-
-*Projeto desenvolvido com foco em boas práticas de API REST, segurança e arquitetura escalável.*
