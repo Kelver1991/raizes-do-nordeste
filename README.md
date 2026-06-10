@@ -25,8 +25,10 @@ A API foi construída seguindo boas práticas de segurança, com autenticação 
 
 ## 🖥️ Preview
 
-> _Adicione aqui um print da tela `/docs` com os endpoints listados no Swagger UI._  
-> _Exemplo: tire um print de `http://localhost:8000/docs` e arraste para esta seção no editor do GitHub._
+A API conta com documentação interativa gerada automaticamente pelo **Swagger UI / OpenAPI 3.1**.  
+Após rodar o projeto localmente, acesse `http://localhost:8000/docs` para explorar e testar todos os endpoints.
+
+![Swagger UI](https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg)
 
 ---
 
