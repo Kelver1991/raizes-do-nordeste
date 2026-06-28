@@ -28,7 +28,7 @@ A API foi construída seguindo boas práticas de segurança, com autenticação 
 A API conta com documentação interativa gerada automaticamente pelo **Swagger UI / OpenAPI 3.1**.  
 Após rodar o projeto localmente, acesse `http://localhost:8000/docs` para explorar e testar todos os endpoints.
 
-![Swagger UI](https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg)
+![Preview do repositorio Raizes do Nordeste API](docs/images/raizes-do-nordeste-repositorio.png)
 
 ---
 
@@ -175,7 +175,11 @@ cp .env.example .env
 Conteúdo do `.env`:
 
 ```env
-DATABASE_URL=mysql+pymysql://usuario:senha@localhost:3306/raizes_db
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=usuario
+DB_PASSWORD=senha
+DB_NAME=raizes_db
 SECRET_KEY=sua_chave_secreta
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60

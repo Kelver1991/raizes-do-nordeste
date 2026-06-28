@@ -6,8 +6,8 @@ from app.api import auth_router, unidades_router, produtos_router, estoque_route
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Raízes do Nordeste API",
-    description="API do sistema de gestão da rede de restaurantes Raízes do Nordeste",
+    title="Raizes do Nordeste API",
+    description="API do sistema de gestao da rede de restaurantes Raizes do Nordeste",
     version="1.0.0"
 )
 
@@ -21,4 +21,4 @@ app.include_router(fidelidade_router.router)
 
 @app.get("/")
 def root():
-    return {"message": "Bem-vindo à API Raízes do Nordeste!"}
+    return {"message": "Bem-vindo a API Raizes do Nordeste!"}
